@@ -1,0 +1,15 @@
+{
+  "dictionary": "DICT_4X4_50",
+  "marker_size": 0.150,
+  "frame": "room",
+  "comment": "Room frame: origin at a floor corner, x along one wall, y along the other, z up. position = marker centre [m]; normal = unit vector pointing from the wall INTO the room. Replace every value with your tape measurements.",
+  "markers": {
+    "0": {"position": [5.20, 1.10, 1.50], "normal": [-1, 0, 0]},
+    "1": {"position": [5.20, 2.60, 1.40], "normal": [-1, 0, 0]},
+    "2": {"position": [3.80, 4.10, 1.55], "normal": [0, -1, 0]},
+    "3": {"position": [1.50, 4.10, 1.45], "normal": [0, -1, 0]},
+    "4": {"position": [0.00, 2.90, 1.50], "normal": [1, 0, 0]},
+    "5": {"position": [0.00, 1.20, 1.35], "normal": [1, 0, 0]},
+    "6": {"position": [4.00, 0.00, 1.50], "normal": [0, 1, 0]}
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "markers": {
+    "dictionary": "DICT_4X4_50",
+    "marker_size_m": 0.15,
+    "valid_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_sightings": 5,
+    "error_correction_rate": 0.4,
+    "min_side_px": 20,
+    "max_reproj_px": 3.0,
+    "max_range_m": 8.0
+  },
+  "processing": {
+    "stride": 2,
+    "resize": 1.0
+  },
+  "frontend": {
+    "max_features": 300,
+    "min_feature_dist": 12,
+    "klt_fb_px": 1.0,
+    "boot_min_side_px": 40,
+    "boot_baseline_m": 0.1,
+    "boot_parallax_px": 15,
+    "boot_min_points": 40,
+    "pnp_min_points": 15,
+    "pnp_min_inliers": 12,
+    "pnp_min_inlier_ratio": 0.4,
+    "pnp_reproj_px": 2.5,
+    "gate_rot_deg": 8.0,
+    "gate_pos_m": 0.35,
+    "kf_min_gap": 2,
+    "kf_max_gap": 12,
+    "kf_parallax_px": 20,
+    "kf_min_map_points": 80,
+    "min_tri_baseline_m": 0.03,
+    "min_tri_angle_deg": 1.0,
+    "tri_reproj_px": 2.0,
+    "max_depth_m": 15.0,
+    "reanchor_after_kfs": 6,
+    "vel_smoothing": 0.6,
+    "lost_motion_model": "const_vel",
+    "lost_vel_decay_s": 1.5,
+    "reinit_speed_min": 0.2,
+    "reinit_speed_max": 1.5,
+    "boot_max_rot_deg": 25.0
+  },
+  "backend": {
+    "sigma_vo_rot_deg": 0.3,
+    "sigma_vo_trans_m": 0.005,
+    "sigma_vo_trans_frac": 0.05,
+    "sigma_imu_rot_deg": 0.5,
+    "sigma_imu_trans_m": 0.05,
+    "sigma_imu_trans_frac": 0.5,
+    "sigma_gyro_rot_deg": 0.15,
+    "sigma_corner_px": 1.0,
+    "huber_scale": 2.0,
+    "sigma_map_prior_m": 0.01,
+    "sigma_map_prior_deg": 1.0,
+    "outlier_reproj_px": 6.0,
+    "max_iter": 40,
+    "sigma_log_scale_reinit": 0.7
+  },
+  "evaluation": {
+    "static_min_s": 1.0
+  },
+  "sync": {
+    "per_recording_td": true,
+    "min_corr": 0.85,
+    "rerun_if_diff_ms": 10.0,
+    "td_search_ms": 300.0
+  }
+}

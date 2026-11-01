@@ -1,0 +1,9 @@
+# Tested with Python 3.12 on these exact versions (numpy 2.4 needs Python >= 3.11).
+# OpenCV 4.10.0.84 also works (tested); any opencv build must include the contrib/aruco module.
+opencv-contrib-python==5.0.0.93
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.2
+plotly==7.1.0
+streamlit==1.66.0
+pillow==12.1.1
